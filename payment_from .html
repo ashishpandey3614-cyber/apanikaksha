@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment from</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="container">
+    <form action="">
+    <h1 main header>payment form</h1>
+    <h2>contest information</h2>
+    <p>required filad are followad by *</p>
+    </form>
+    <p>Name:* <input type="text" name="Name" required></p>
+    <fieldset>
+        <legend>gender</legend>
+    <p>*
+        male <input type="radio" name="gender" required>
+        female <input type="radio" name="gender"required>
+        oather <input type="radio" name="gender"required>
+    </p>
+    </fieldset>
+    <p>Address <textarea name="address" id="Address" cols="100" role="10"></textarea></p>
+    <p>Email* <input type="email" name="email" id="email"required></p>
+    <p>Phone* number <input type="number" name="phone number" id="phone number"required></p>
+    <br>
+    <h2>Payment ditels</h2>
+    <p>card type*
+        <select name="card type" id="card type"required>
+            <option value="">----select card type--</option>
+            <option value="visa">visa</option>
+            <option value="devit card">devid card</option>
+            <option value="credit card">credit card</option>
+            <option value="mastar card">mastar card</option>
+        </select>
+    </p>
+    <p>card number* <input type="number" name="card number" id="card number"required></p>
+    <p>exparetion date* <input type="date" name="exparetion date" id="exparetion date"required></p>
+    <p>cvv* <input type="password" name="cvv" id="cvv"required></p>
+    <input type="submit" value="pay now">
+</div>
+</body>
+</html>
