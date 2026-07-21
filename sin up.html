@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SinUP</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+    h1 {
+        color: #333;
+    }
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+    }
+    input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+<body>
+    <h1>sin UP</h1>
+    <button onclick="location.href='login.html'">Login</button>
+    <h3>
+        <form>
+            <label for="email">email:</label>
+            <input type="text" id="email" name="email"><br><br>
+            <label for="username">username:</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" value="sinUP">
+        </form>
+    </h3>
+ <script>
+document.querySelector("form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let email = document.getElementById("email").value;
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+
+    // Save data
+    localStorage.setItem("email", email);
+    localStorage.setItem("username", username);
+    localStorage.setItem("password", password);
+
+    alert("Sign Up Successful!");
+
+    // Login page
+    window.location.href = "login.html";
+});
+</script>
+</body>
+</html>
